@@ -8,11 +8,11 @@ import Counter from "./components/Counter";
 function App() {
     return (
         <div className="App">
-            <Counter/>
+            {/*<Counter/>*/}
             {/*<Message/>*/}
-            {/*<Greet name='one' number={1}>*/}
+            <Greet name='one' number={1}>
             {/*    <p>this is children props</p>*/}
-            {/*</Greet>*/}
+            </Greet>
             {/*<Greet name='two' number={2}/>*/}
             {/*<Greet name='three' number={3}/>*/}
             {/*<Welcome name='one' number={1}>*/}

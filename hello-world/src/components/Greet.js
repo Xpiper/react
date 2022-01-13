@@ -6,10 +6,10 @@ import React from 'react';
 //     );
 // }
 
-const Greet = props =>
+const Greet = ({name, number, children}) =>
     <div>
-        <h1>hello {props.name} {props.number}</h1>
-        {props.children}
+        <h1>hello {name} {number}</h1>
+        {children}
     </div>
 
 export default Greet;
