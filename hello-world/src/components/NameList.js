@@ -4,6 +4,7 @@ import Person from "./Person";
 
 function NameList(props) {
 
+    const names = ['Bruce', 'Diana', 'Clark'];
     const persons = [
         {
             id: 1,
@@ -24,10 +25,12 @@ function NameList(props) {
             skill: 'Vue'
         }
     ]
-    const personList = persons.map(person => <Person key={person.id} person={person}/>)
+    // const personList = persons.map(person => <Person key={person.id} person={person}/>)
+    const nameList = names.map((name, index) => <h2 key={index}>{index} {name}</h2>)
     return (
         <div>
-            {personList}
+            {/*{personList}*/}
+            {nameList}
         </div>
     );
 }
