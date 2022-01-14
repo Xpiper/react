@@ -15,11 +15,15 @@ import InLine from "./components/InLine";
 import './components/appStyles.css'
 import styles from './components/appSytles.module.css'
 import Form from "./components/Form";
+import FragmentDemo from "./components/FragmentDemo";
+import Table from "./components/Table";
 
 function App() {
     return (
         <div className="App">
-            <Form/>
+            <Table/>
+            <FragmentDemo/>
+            {/*<Form/>*/}
             {/*<h1 className='error'>error</h1>*/}
             {/*<h1 className={styles.success}>success</h1>*/}
             {/*<InLine/>*/}
