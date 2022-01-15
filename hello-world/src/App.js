@@ -30,16 +30,21 @@ import HoverCounter from "./components/HoverCounter";
 import HoverCounterTwo from "./components/HoverCounterTwo";
 import ClickCounterTwo from "./components/ClickCounterTwo";
 import User from "./components/User";
+import ComponentC from "./components/context/ComponentC";
+import {UserProvider, UserConsumer} from './components/context/userContext'
 
 function App() {
     return (
         <div className="App">
-            <Counter>
-                {(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}/>}
-            </Counter>
-            <Counter>
-                {(count, incrementCount) => <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
-            </Counter>
+            <UserProvider value='lpd'>
+                <ComponentC/>
+            </UserProvider>
+            {/*<Counter>*/}
+            {/*    {(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}/>}*/}
+            {/*</Counter>*/}
+            {/*<Counter>*/}
+            {/*    {(count, incrementCount) => <HoverCounterTwo count={count} incrementCount={incrementCount}/>}*/}
+            {/*</Counter>*/}
             {/*<ClickCounterTwo/>*/}
             {/*<HoverCounterTwo/>*/}
             {/*<User render={(isLoggedIn) => isLoggedIn ? 'lpd' : 'guest'}/>*/}
