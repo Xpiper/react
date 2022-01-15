@@ -32,13 +32,17 @@ import ClickCounterTwo from "./components/ClickCounterTwo";
 import User from "./components/User";
 import ComponentC from "./components/context/ComponentC";
 import {UserProvider, UserConsumer} from './components/context/userContext'
+import PostList from "./components/http/PostList";
+import PostForm from "./components/http/PostForm";
 
 function App() {
     return (
         <div className="App">
-            <UserProvider value='lpd'>
-                <ComponentC/>
-            </UserProvider>
+            <PostForm/>
+            {/*<PostList/>*/}
+            {/*<UserProvider value='lpd'>*/}
+            {/*    <ComponentC/>*/}
+            {/*</UserProvider>*/}
             {/*<Counter>*/}
             {/*    {(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount}/>}*/}
             {/*</Counter>*/}
